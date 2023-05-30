@@ -12,3 +12,26 @@
 #container {
   overflow: auto;
 }
+
+/* Apply animation to the scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Define the animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to an element on the page */
+.fade-in-up {
+  animation: fadeInUp 1s ease-in-out;
+}
