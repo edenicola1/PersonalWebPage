@@ -1,0 +1,63 @@
+#divHeader {
+    display: flex;
+    position: absolute;
+    top: 0;
+    height: 150px;
+    width: 99vw;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#headerName {
+    font-size: 3.5rem;
+    margin-left: 5%;
+
+}
+
+#aboutMeButton {
+    background-color: rgb(235, 235, 235);
+    position: relative;
+    right: 70%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 70%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    z-index: 1;
+    font-size: 30px;
+}
+
+.dropdown-content button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

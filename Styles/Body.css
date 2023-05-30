@@ -1,0 +1,84 @@
+#bodyContainer {
+    height: fit-content;
+    width: 100vw;
+    margin-top: 180px;
+    margin-bottom: 180px;
+    padding-top: 5%;
+
+}
+
+#presentationSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    top: 25%;
+    height: auto;
+    width: 98vw;
+    margin: 30px;
+}
+
+#presentationTitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 6vw;
+    margin: 0 30px 20px 30px;
+    width: 65%;
+}
+
+#presentationParagraph {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2vw;
+    width: 45%;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+#myPic {
+    filter: grayscale(100%);
+    height: 100%;
+    border-radius: 30%;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+#myProjects {
+    width: 90vw;
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    position: relative;
+}
+
+#projectsButton {
+    font-size: 3vw;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+    margin-left: 12%;
+}
+
+#myProjects::after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: black;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+/* #presentationSection::before {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: black;
+    margin-top: 2px;
+    margin-left: 120px;
+} */
