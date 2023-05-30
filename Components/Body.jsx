@@ -1,6 +1,7 @@
 import React from 'react'
 import "../Styles/Body.css"
 import Pic from "../Screenshot 2023-05-25 at 16.38.07.png"
+import { Link } from "react-router-dom";
 
 function Body() {
     return (
@@ -13,7 +14,9 @@ function Body() {
                 <img src={Pic} id="myPic"></img>
             </section>
             <section id="myProjects">
-                <button id="projectsButton"> Tap and check my recent projects! </button>
+                <Link to="/myprojects">
+                    <button id="projectsButton"> Tap and check my recent projects! </button>
+                </Link>
             </section>
         </div>
     )

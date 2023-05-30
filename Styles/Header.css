@@ -60,3 +60,56 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+@media (max-width: 428px) {
+
+    /* Adjust the max-width as needed for iPhone 12 Pro */
+    #divHeader {
+        height: 100px;
+        /* Adjust the height for mobile devices */
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #headerName {
+        font-size: 2rem;
+        /* Adjust the font size for mobile devices */
+        margin-left: 15px;
+        margin-top: 23px;
+        /* Adjust the margin for mobile devices */
+    }
+
+    #aboutMeButton {
+        position: static;
+        margin-top: 15px;
+        /* Adjust the margin for mobile devices */
+        margin-right: 10px;
+        font-size: 1.5rem;
+        /* Adjust the font size for mobile devices */
+        padding: 5px 10px;
+        /* Adjust the padding for mobile devices */
+        width: fit-content;
+        /* Adjust the width for mobile devices */
+    }
+
+    .dropdown {
+        position: static;
+    }
+
+    .dropdown-content {
+        margin-top: -20px;
+        /* Adjust the margin for mobile devices */
+        left: 70%;
+        width: fit-content;
+        min-width: unset;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .dropdown-content button {
+        padding: 5px 10px;
+        /* Adjust the padding for mobile devices */
+        font-size: 1.2rem;
+        /* Adjust the font size for mobile devices */
+    }
+}

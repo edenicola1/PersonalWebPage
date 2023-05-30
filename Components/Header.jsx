@@ -26,7 +26,8 @@ function Header() {
                 </button>
                 {showDropdown && (
                     <div className="dropdown-content">
-                        <button onClick={() => handleOptionClick("Option 1")}> about me </button>
+                        <Link to="/aboutme"><button onClick={() => handleOptionClick("Option 1")}> about me </button>
+                        </Link>
                         <button onClick={() => handleOptionClick("Option 2")}> technologies </button>
                         <button onClick={() => handleOptionClick("Option 3")}> CV </button>
                     </div>

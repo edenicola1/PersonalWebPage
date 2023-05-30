@@ -4,8 +4,6 @@
     margin-top: 20%;
     margin-bottom: 2%;
     font-family: 'Bebas Neue', sans-serif;
-
-
 }
 
 #socialsLinks {
@@ -50,4 +48,59 @@
     background-color: rgb(235, 235, 235);
     border-radius: 10%;
     border: 2px solid black;
+}
+
+@media (max-width: 428px) {
+    #footerContainer {
+        margin-top: 10%;
+        /* Adjust the margin-top for mobile devices */
+        margin-bottom: 5%;
+        /* Adjust the margin-bottom for mobile devices */
+    }
+
+    #socialsLinks {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        /* Adjust the gap for mobile devices */
+        margin-top: -60px;
+        /* Adjust the margin-top for mobile devices */
+        margin-bottom: 80px;
+        /* Adjust the margin-bottom for mobile devices */
+    }
+
+    #linkedinLogo {
+        height: 30px;
+        /* Adjust the height for mobile devices */
+    }
+
+    #githubLogo {
+        height: 30px;
+        /* Adjust the height for mobile devices */
+        margin-top: 4%;
+        /* Adjust the margin-top for mobile devices */
+    }
+
+    #inquiries {
+        margin-top: 50px;
+        /* Adjust the margin-top for mobile devices */
+    }
+
+    #message {
+        font-size: 4vw;
+        /* Adjust the font size for mobile devices */
+        margin-top: -30px;
+        /* Adjust the margin-top for mobile devices */
+        margin-bottom: 30px;
+        /* Adjust the margin-bottom for mobile devices */
+    }
+
+    #contactButton {
+        margin-left: 40%;
+        /* Adjust the margin-left for mobile devices */
+        margin-top: 0;
+        /* Adjust the margin-top for mobile devices */
+        font-size: 4vw;
+        /* Adjust the font size for mobile devices */
+    }
 }
