@@ -61,6 +61,10 @@
     display: block;
 }
 
+#carouselTitle {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
 @media (max-width: 428px) {
 
     /* Adjust the max-width as needed for iPhone 12 Pro */

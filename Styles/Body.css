@@ -59,7 +59,8 @@
     font-family: 'Oswald', sans-serif;
     background-color: rgb(235, 235, 235);
     cursor: pointer;
-    margin-left: 12%;
+    margin-left: 6.5%;
+    width: 90vw;
 }
 
 #myProjects::after {
