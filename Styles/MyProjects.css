@@ -8,6 +8,7 @@
     font-size: 20vw;
     text-align: center;
     margin-top: -10px;
+    color: black;
 }
 
 #projectsParagraph {
@@ -54,24 +55,68 @@
     color: grey;
 }
 
-#line {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    top: 285%;
+#line3 {
     transform: translateX(-50%);
     width: 80%;
     height: 2px;
     background-color: black;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    margin-left: 50%;
 }
 
 #footerMyProjects {
     margin-top: 30px;
     margin-bottom: 30px;
+    color: black;
 }
 
 #footerText {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2vw;
     text-align: center;
+}
+
+@media (max-width: 428px) {
+    #projectsTitle {
+        font-size: 20vw;
+        margin-top: 10px;
+    }
+
+    #projectsParagraph {
+        font-size: 4vw;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+
+    #Project {
+        margin-bottom: 40px;
+    }
+
+    #Fotos {
+        height: 150px;
+    }
+
+    #projectDescription {
+        font-size: 2.5vw;
+        margin-left: 40px;
+        margin-right: 40px;
+
+    }
+
+    #footerText {
+        font-size: 4vw;
+    }
+
+    #line {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        top: 116%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 2px;
+        background-color: black;
+    }
 }

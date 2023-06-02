@@ -1,0 +1,130 @@
+#technologiesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#technologiesTitle {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 10vw;
+    color: black;
+    margin-bottom: 150px;
+}
+
+#sectionContent1 {
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    width: 60%;
+}
+
+#divTech {
+    height: 40vh;
+
+}
+
+#fotoHCJ {
+    height: 50%;
+    width: 50%;
+    background-color: transparent;
+    margin-top: 5%;
+}
+
+#fotoR {
+    height: 50%;
+    margin-top: 5%;
+
+}
+
+#fotoN {
+    height: 80%;
+    width: 50%;
+    margin-top: 0%;
+    background-color: transparent;
+}
+
+#fotoSQL {
+    height: 80%;
+    width: 50%;
+    margin-top: 0%;
+    margin-left: 5%;
+    background-color: transparent;
+}
+
+#fotoScrum {
+    height: 65%;
+    width: 26%;
+    margin-top: 2%;
+}
+
+#line1 {
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    margin-left: 80%;
+}
+
+@media (max-width: 428px) {
+
+    #technologiesContainer {
+        margin-top: 100px;
+    }
+
+    #technologiesTitle {
+        margin-top: 50px;
+        font-size: 15vw;
+    }
+
+    #sectionContent1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 200px;
+        width: 85%;
+    }
+
+    #divTech {
+        height: 30vh;
+
+    }
+
+    #fotoHCJ {
+        height: 35%;
+        width: 65%;
+        background-color: transparent;
+        margin-top: 15%;
+    }
+
+    #fotoR {
+        height: 50%;
+        margin-top: 12%;
+
+    }
+
+    #fotoN {
+        height: 80%;
+        width: 80%;
+        margin-top: 3%;
+        background-color: transparent;
+    }
+
+    #fotoSQL {
+        height: 60%;
+        width: 70%;
+        margin-top: 7%;
+        margin-left: 5%;
+        background-color: transparent;
+    }
+
+    #fotoScrum {
+        height: 60%;
+        width: 45%;
+        margin-top: 10%;
+    }
+
+}

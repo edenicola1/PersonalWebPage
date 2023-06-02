@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import '../Styles/MyProjects.css';
 import ServiciosImage from '../Screenshot 2023-05-30 at 20.21.12.png';
 import PokedexImage from '../Screenshot 2023-05-30 at 20.39.34.png';
@@ -24,6 +24,10 @@ function MyProjects() {
             video.currentTime = 0;
         }
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div id="myProjectsContainer">
@@ -61,10 +65,10 @@ function MyProjects() {
                 </div>
             </section>
 
-            <div id="line"></div>
+            <div id="line3"></div>
 
             <section id="footerMyProjects">
-                <p id="footerText"> Interested in exploring the code in-depth?   <a href="https://github.com/edenicola1" target="_blank" rel="noopener noreferrer">Here's</a> my Github! </p>
+                <p id="footerText"> Interested in exploring the code in-depth?   <a href="https://github.com/edenicola1" target="_blank" rel="noopener noreferrer" id="footerText">Here's</a> my Github! </p>
             </section>
         </div>
     );

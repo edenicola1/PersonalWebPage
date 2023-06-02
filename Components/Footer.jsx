@@ -18,8 +18,8 @@ function Footer() {
                 </div>
                 <div id="inquiries">
                     <p id="message"> Do not hesitate to inquire! </p>
-                    <a href="mailto:edenicolapalacio@gmail.com">
-                        <button id="contactButton"> CONTACT </button>
+                    <a href="mailto:edenicolapalacio@gmail.com" id="contactButton2">
+                        <button id="contactButton"> CONTACT ME </button>
                     </a>
                 </div>
 

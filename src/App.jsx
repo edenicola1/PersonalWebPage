@@ -5,16 +5,21 @@ import './App.css'
 import Header from "../Components/Header.jsx"
 import Body from "../Components/Body.jsx"
 import Footer from "../Components/Footer.jsx"
+import { Element } from 'react-scroll';
 
 function App() {
-
   return (
     <div id="container">
       <Header />
-      <Body />
-      <Footer />
+      <Element name="bodySection">
+        <Body />
+      </Element>
+      <Element name="footerSection">
+        <Footer />
+      </Element>
     </div>
   )
 }
+
 
 export default App

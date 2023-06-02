@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import "../Styles/Header.css";
-import Menu from "../menu_FILL0_wght400_GRAD0_opsz48.svg";
-import pdfFile from "../CV-EnricoDeNicolaPalacio-English.pdf";
-import { Link } from "react-router-dom";
+import '../Styles/Header.css';
+import Menu from '../menu_FILL0_wght400_GRAD0_opsz48.svg';
+import pdfFile from '../CV-EnricoDeNicolaPalacio-English.pdf';
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 function Header() {
     const [showDropdown, setShowDropdown] = useState(false);
@@ -16,16 +17,14 @@ function Header() {
         setSelectedOption(option);
         setShowDropdown(false);
 
-        if (option === "Option 3") {
+        if (option === 'Option 3') {
             // Trigger PDF file download
             const link = document.createElement('a');
             link.href = pdfFile;
-            link.target = "_blank";
-            link.download = "CV-EnricoDeNicolaPalacio.pdf";
+            link.target = '_blank';
+            link.download = 'CV-EnricoDeNicolaPalacio.pdf';
             link.click();
         }
-
-        // Perform any other actions based on the selected option
     };
 
     return (
@@ -37,11 +36,13 @@ function Header() {
                 </button>
                 {showDropdown && (
                     <div className="dropdown-content">
-                        <Link to="/aboutme">
-                            <button onClick={() => handleOptionClick("Option 1")}>about me</button>
-                        </Link>
-                        <button onClick={() => handleOptionClick("Option 2")}>technologies</button>
-                        <button onClick={() => handleOptionClick("Option 3")}>CV</button>
+                        <ScrollLink to="sectionAboutMe" smooth={true} duration={500} onClick={() => handleOptionClick('Option 1')}>
+                            <button> about me </button>
+                        </ScrollLink>
+                        <ScrollLink to="sectionTechnologies" smooth={true} duration={500} onClick={() => handleOptionClick('Option 2')}>
+                            <button onClick={() => handleOptionClick('Option 2')}>technologies</button>
+                        </ScrollLink>
+                        <button onClick={() => handleOptionClick('Option 3')}>CV</button>
                     </div>
                 )}
             </div>

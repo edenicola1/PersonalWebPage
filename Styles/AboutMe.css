@@ -1,4 +1,4 @@
-#aboutmeContainer {
+#aboutMeContainer {
     height: 100%;
     width: 100vw;
 }
@@ -6,42 +6,73 @@
 #aboutMetitle {
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
-    font-size: 25vw;
+    font-size: 10vw;
+    margin-bottom: 20px;
+    color: black;
 }
 
-#sectionContenido {
+#sectionContent {
     font-family: 'Oswald', sans-serif;
-    font-size: 3vw;
-    margin-left: 50px;
-    margin-right: 30px;
+    font-size: 2vw;
+    margin-left: 100px;
+    margin-right: 100px;
     text-align: justify;
+    margin-bottom: 200px;
 
+}
+
+#SKV {
+    height: 80vh;
+    width: 100%;
 }
 
 #paragraphTitle {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 4vw;
+    margin-top: 40px;
+    color: black;
 }
 
-#paragraphContenido {
-    margin-top: 5px;
+#paragraphContent {
+    margin-top: 55px;
     margin-bottom: 35px;
+    margin-left: 70px;
+    margin-right: 70px;
     color: grey;
+    text-align: justify;
 }
+
 
 @media (max-width: 428px) {
-    #sectionContenido {
+    #sectionContent {
         margin-left: 30px;
         margin-right: 40px;
+        margin-top: -20px;
+        margin-bottom: 40px;
     }
 
     #aboutMetitle {
-        margin-left: -20px;
-        margin-top: -100px;
+        margin-top: -150px;
+        font-size: 15vw;
     }
 
-    #paragraphContenido {
-        margin-top: 5px;
-        margin-bottom: 20px
+    #paragraphContent {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 4.1vw;
+    }
+
+    #paragraphTitle {
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 6vw;
+    }
+
+    #SKV {
+        height: 65vh;
+        width: 100%;
     }
 }
