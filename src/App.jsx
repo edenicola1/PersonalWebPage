@@ -1,25 +1,54 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from "../Components/Header.jsx"
-import Body from "../Components/Body.jsx"
-import Footer from "../Components/Footer.jsx"
+import React, { useState, useEffect } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+import Header from "../Components/Header.jsx";
+import Body from "../Components/Body.jsx";
+import Footer from "../Components/Footer.jsx";
 import { Element } from 'react-scroll';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadingText, setLoadingText] = useState('Coding');
+
+  useEffect(() => {
+    // Simulating a loading delay
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    // Update the loading text
+    const interval = setInterval(() => {
+      setLoadingText((prevText) => {
+        if (prevText === 'Coding...') {
+          return 'Coding';
+        } else {
+          return prevText + '.';
+        }
+      });
+    }, 500);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <div id="container">
-      <Header />
-      <Element name="bodySection">
-        <Body />
-      </Element>
-      <Element name="footerSection">
-        <Footer />
-      </Element>
+      {isLoading ? (
+        <div className="loading">
+          <h2 className="loadingTitle">{loadingText}</h2>
+          <img src="../comp_2_2.gif" alt="Typing Animation" className="typing-animation" />
+        </div>
+      ) : (
+        <>
+          <Header />
+          <Body />
+          <Footer />
+        </>
+      )}
     </div>
-  )
+  );
 }
 
-
-export default App
+export default App;

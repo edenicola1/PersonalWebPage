@@ -59,8 +59,8 @@
     #paragraphContent {
         margin-top: 20px;
         margin-bottom: 0px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
         font-size: 4.1vw;
     }
 
@@ -72,7 +72,7 @@
     }
 
     #SKV {
-        height: 65vh;
+        height: 69vh;
         width: 100%;
     }
 }
