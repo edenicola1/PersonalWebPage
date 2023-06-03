@@ -108,6 +108,9 @@
         left: -6%;
         /* Adjust the margin for mobile devices */
         height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #presentationTitle {
@@ -132,17 +135,15 @@
     }
 
     #myPic {
-        top: 110%;
-        bottom: 10%;
-        /* Adjust the bottom position for mobile devices */
         display: flex;
         justify-content: center;
         align-items: center;
-        left: 15%;
-        transform: translateX(50%) translateY(0%);
+        flex-direction: column;
         height: 70%;
-
+        left: 32%;
+        top: 140%;
     }
+
 
     #myProjects {
         margin-top: 250px;

@@ -28,7 +28,7 @@ function AboutMe() {
                     <div id="V">
                         <p id='paragraphTitle'> Vision </p>
                         <p id='paragraphContent'> My goal is to find the ideal working environment to further develop my skills in both sectors, applying the techniques acquired in each area in an integrated and effective manner. </p>
-                        <p id='paragraphContent'> Above that, I would love to be able to develop myself in the blockchain and crypto world, but in this case in a professional way. I really think this space will be leading the next majors revolutions in the coming years, and being able to contribute in any manner to it would be indescribable </p>
+                        <p id='paragraphContent'> Above that, I would love to be able to develop myself in the blockchain and crypto world, but in this case in a professional way. I really think this space will be leading the next majors revolutions in the coming years, and being able to contribute in any manner to it would be indescribable. </p>
 
 
                     </div>
