@@ -2,6 +2,7 @@
   "name": "personalwebpage",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://edenicola1.github.io/PersonalWebPage",
   "type": "module",
   "scripts": {
     "dev": "vite",
