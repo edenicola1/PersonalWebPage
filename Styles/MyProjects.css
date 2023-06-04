@@ -9,6 +9,7 @@
     text-align: center;
     margin-top: -10px;
     color: black;
+    animation: fade-in 2s ease forwards;
 }
 
 #projectsParagraph {
@@ -19,6 +20,7 @@
     margin-right: 20px;
     margin-bottom: 100px;
     color: grey;
+    animation: fade-in 5s ease forwards;
 }
 
 #projectsSection {
@@ -40,6 +42,7 @@
     flex-direction: column;
     /* Display the description below the picture */
     margin-bottom: 100px;
+    animation: fade-in 10s ease forwards;
 }
 
 #Fotos {

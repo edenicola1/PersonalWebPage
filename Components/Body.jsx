@@ -1,13 +1,14 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import '../Styles/Body.css';
 import Pic from '../Screenshot 2023-05-25 at 16.38.07.png';
 import { Link } from 'react-router-dom';
 import AboutMe from './AboutMe.jsx';
 import Technologies from './Technologies';
 
+
+
 function Body() {
-    const aboutMeRef = useRef(null);
-    const technologiesRef = useRef(null);
+
 
     return (
         <div id="bodyContainer">
@@ -21,16 +22,16 @@ function Body() {
                 </div>
                 <img src={Pic} id="myPic" alt="My Picture" />
             </section>
-            <section id="myProjects">
+            <section id="myProjects" >
                 <Link to="/myprojects">
                     <button id="projectsButton">Tap and check my recent projects!</button>
                 </Link>
             </section>
             <div id="line2"></div>
-            <section id="sectionAboutMe" ref={aboutMeRef}>
+            <section id="sectionAboutMe">
                 <AboutMe />
             </section>
-            <section id="sectionTechnologies" ref={technologiesRef}>
+            <section id="sectionTechnologies" >
                 <Technologies />
             </section>
 
