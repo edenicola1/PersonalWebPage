@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { createBrowserRouter } from 'react-router-dom';
 import { RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import AboutMe from '../Components/AboutMe.jsx';
 import MyProjects from '../Components/MyProjects.jsx';
-import './index.css';
+import './index.css'
 
-const router = [
+const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
@@ -16,13 +16,14 @@ const router = [
     path: "/myprojects",
     element: <MyProjects />,
   },
-];
 
-ReactDOM.render(
+
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <RouterProvider router={router} />
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById("root")
+
+    <RouterProvider router={router} />
+
+  </React.StrictMode>
 );
