@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
-import "../Styles/Footer.css";
-import linkedinLogo from "../linkedin-big-logo.svg";
-import githubLogo from "../github logo.svg";
+import "../../Styles/Footer.css";
+import linkedinLogo from "../../../linkedin-big-logo.svg";
+import githubLogo from "../../../github logo.svg";
 
 function Footer() {
     const sectionRef = useRef(null);

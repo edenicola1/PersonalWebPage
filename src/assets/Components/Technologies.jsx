@@ -1,7 +1,14 @@
 import React, { useRef, useEffect, useState } from 'react';
-import "../Styles/Technologies.css";
+import "../../Styles/Technologies.css";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import HTML from "../../../html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png";
+import ReactPic from "../react.svg";
+import Node from "../../../nodejs-1-logo.png";
+import SQL from "../../../azure-sql-banner.webp";
+import Scrum from "../../../1-What-is-agile-methodology.webp"
+
+
 
 function Technologies() {
     const sectionRef = useRef(null);
@@ -34,19 +41,19 @@ function Technologies() {
             <section id="sectionContent1" className={isVisible ? 'visible' : 'hidden'}>
                 <Carousel showArrows={true} showThumbs={false} infiniteLoop={true} showStatus={false}>
                     <div id="divTech">
-                        <img src="../html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png" alt="Image 1" id="fotoHCJ" />
+                        <img src={HTML} alt="Image 1" id="fotoHCJ" />
                     </div>
                     <div id="divTech">
-                        <img src="../src/assets/react.svg" alt="Image 2" id="fotoR" />
+                        <img src={ReactPic} alt="Image 2" id="fotoR" />
                     </div>
                     <div id="divTech">
-                        <img src="../nodejs-1-logo.png" alt="Image 3" id="fotoN" />
+                        <img src={Node} alt="Image 3" id="fotoN" />
                     </div>
                     <div id="divTech">
-                        <img src="../azure-sql-banner.webp" alt="Image 3" id="fotoSQL" />
+                        <img src={SQL} alt="Image 3" id="fotoSQL" />
                     </div>
                     <div id="divTech">
-                        <img src="../1-What-is-agile-methodology.webp" id="fotoScrum" />
+                        <img src={Scrum} id="fotoScrum" />
                     </div>
                 </Carousel>
             </section>

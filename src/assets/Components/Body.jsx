@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
-import '../Styles/Body.css';
-import Pic from '../Screenshot 2023-05-25 at 16.38.07.png';
+import '../../Styles/Body.css';
+import Pic from '../../../Screenshot 2023-05-25 at 16.38.07.png';
 import { Link } from 'react-router-dom';
 import AboutMe from './AboutMe.jsx';
 import Technologies from './Technologies';

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Header from "../Components/Header.jsx";
-import Body from "../Components/Body.jsx";
-import Footer from "../Components/Footer.jsx";
+import Header from "./assets/Components/Header.jsx";
+import Body from "./assets/Components/Body.jsx";
+import Footer from "./assets/Components/Footer.jsx";
+import Coding from "../comp_2_2.gif"
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,7 +37,7 @@ function App() {
         {isLoading ? (
           <div className="loading">
             <h2 className="loadingTitle">{loadingText}</h2>
-            <img src="../comp_2_2.gif" alt="Typing Animation" className="typing-animation" />
+            <img src={Coding} alt="Typing Animation" className="typing-animation" />
           </div>
         ) : (
           <>

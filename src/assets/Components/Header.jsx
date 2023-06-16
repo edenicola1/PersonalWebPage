@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../Styles/Header.css';
-import Menu from '../menu_FILL0_wght400_GRAD0_opsz48.svg';
-import pdfFile from '../CV-EnricoDeNicolaPalacio-English.pdf';
+import '../../Styles/Header.css';
+import Menu from '../../../menu_FILL0_wght400_GRAD0_opsz48.svg';
+import pdfFile from '../../../CV-EnricoDeNicolaPalacio-English.pdf';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 

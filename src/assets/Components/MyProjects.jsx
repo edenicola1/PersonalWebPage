@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react';
-import '../Styles/MyProjects.css';
-import ServiciosImage from '../Screenshot 2023-05-30 at 20.21.12.png';
-import PokedexImage from '../Screenshot 2023-05-30 at 20.39.34.png';
-import AudnImage from '../Screenshot 2023-05-30 at 20.41.58.png';
-import ServiciosVideo from '../Screen Recording 2023-05-30 at 20.24.22.mp4';
-import PokedexVideo from '../Screen Recording 2023-05-30 at 20.40.10.mp4';
-import AudnVideo from '../Screen Recording 2023-05-30 at 20.43.12.mp4';
+import '../../Styles/MyProjects.css';
+import ServiciosImage from '../../../Screenshot 2023-05-30 at 20.21.12.png';
+import PokedexImage from '../../../Screenshot 2023-05-30 at 20.39.34.png';
+import AudnImage from '../../../Screenshot 2023-05-30 at 20.41.58.png';
+import ServiciosVideo from '../../../Screen Recording 2023-05-30 at 20.24.22.mp4';
+import PokedexVideo from '../../../Screen Recording 2023-05-30 at 20.40.10.mp4';
+import AudnVideo from '../../../Screen Recording 2023-05-30 at 20.43.12.mp4';
 
 function MyProjects() {
     const videoRefs = useRef([]);
