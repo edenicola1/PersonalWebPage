@@ -31,20 +31,22 @@ function App() {
   }, []);
 
   return (
-    <div id="container">
-      {isLoading ? (
-        <div className="loading">
-          <h2 className="loadingTitle">{loadingText}</h2>
-          <img src="../comp_2_2.gif" alt="Typing Animation" className="typing-animation" />
-        </div>
-      ) : (
-        <>
-          <Header />
-          <Body />
-          <Footer />
-        </>
-      )}
-    </div>
+    <>
+      <div id="container">
+        {isLoading ? (
+          <div className="loading">
+            <h2 className="loadingTitle">{loadingText}</h2>
+            <img src="../comp_2_2.gif" alt="Typing Animation" className="typing-animation" />
+          </div>
+        ) : (
+          <>
+            <Header />
+            <Body />
+            <Footer />
+          </>
+        )}
+      </div>
+    </>
   );
 }
 
